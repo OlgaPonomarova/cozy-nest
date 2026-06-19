@@ -22,7 +22,7 @@
     "@fancyapps/ui": "^6.0.22",
     "@sanity/image-url": "^1.1.0",
     "@sanity/types": "^3.86.0",
-    "next": "15.2.4",
+    "next": "15.2.8",
     "next-intl": "^4.3.4",
     "next-sanity": "^9.10.2",
     "next-sitemap": "^4.2.3",
