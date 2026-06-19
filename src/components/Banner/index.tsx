@@ -9,7 +9,7 @@ export default async function Banner() {
         className="text-[#6D4023] absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center font-medium bg-[#F4EFE9]/80 px-10 py-12 md:p-16 outline-[#814f2d]/80 outline-2 outline-dashed rounded-md outline-offset-[-10px] md:outline-offset-[-16px] w-[80%] md:w-[55%] lg:w-[45%] xl:w-[40%]"
         style={{ fontFamily: 'var(--font-quicksand), sans-serif' }}
       >
-        <h1 className="text-[42px] md:text-6xl xl:text-8xl tracking-wide text-shadow-lg">
+        <h1 className="text-[40px] md:text-6xl xl:text-7xl 2xl:text-8xl tracking-wide text-shadow-lg">
           {t('title')}
         </h1>
         <h2 className="text-xl md:text-3xl lg:text-4xl mt-2 md:mt-8 font-semibold text-[#814f2d] text-shadow-sm leading-7 md:leading-10">
