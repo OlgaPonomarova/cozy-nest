@@ -1,11 +1,10 @@
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import Link from 'next/link';
-import getProductsFromStrapi from './hooks/getProductsFromStrapi.hook.js';
 import ImagesWrapper from '@components/components/common/ImagesWrapper/index.jsx';
+import { productsInStock } from '@components/components/data/productsInStockData.js';
 
 export default async function ProductsInStock() {
-  const products = await getProductsFromStrapi();
   const t = await getTranslations('In-stock');
 
   return (
@@ -37,17 +36,14 @@ export default async function ProductsInStock() {
             },
           }}
         >
-          {products.map((product) => (
+          {productsInStock.map((product) => (
             <div
               key={product.id}
               className="w-full aspect-[1/1] xl:w-[350px] shadow-custom-shadow-img"
             >
-              <Link
-                href={product.images[0].formats.large.url}
-                data-fancybox="gallery"
-              >
+              <Link href={product.image} data-fancybox="gallery">
                 <Image
-                  src={product.images[0].formats.large.url}
+                  src={product.image}
                   width={500}
                   height={350}
                   className="w-full h-full object-cover"
